@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper Haven - Stunning Free Wallpapers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Wallpaper Haven</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search wallpapers...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <nav class="categories">
+                <button class="category-btn active" data-category="nature">Nature</button>
+                <button class="category-btn" data-category="abstract">Abstract</button>
+                <button class="category-btn" data-category="animals">Animals</button>
+                <button class="category-btn" data-category="city">City</button>
+                <button class="category-btn" data-category="space">Space</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="wallpapers-grid" id="wallpapers-grid"></div>
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+            </div>
+            <button class="load-more" id="load-more">Load More</button>
+        </div>
+    </main>
+
+    <div class="wallpaper-modal" id="wallpaper-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <div class="image-info">
+                <p id="image-tags"></p>
+                <a id="download-btn" href="" download class="download-btn">
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2023 Wallpaper Haven. All images from <a href="https://pixabay.com/" target="_blank">Pixabay</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
